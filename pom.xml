@@ -9,6 +9,7 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
+    <name>WORK</name>
 
     <properties>
         <manifest-info.project-version>${project.version}.${BUILD_NUMBER}</manifest-info.project-version>
@@ -23,6 +24,17 @@
         <version.maven-bundle-plugin>2.3.7</version.maven-bundle-plugin>
         <version.jacoco-maven-plugin>0.6.1.201212231917</version.jacoco-maven-plugin>
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>javax</groupId>
+                <artifactId>javaee-api</artifactId>
+                <version>6.0</version>
+                <scope>provided</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <pluginManagement>

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="IdProvider" IDEtalkID="2B7563301702CA368C120A57F4B40949" />
+  <component name="JsfProjectComponent">
+    <option name="faceletsSupport" value="ENABLED" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
