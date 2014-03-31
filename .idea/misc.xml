@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
+  </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/work-warr" />
+    <file type="web" url="file://$PROJECT_DIR$/work-web" />
+  </component>
   <component name="IdProvider" IDEtalkID="2B7563301702CA368C120A57F4B40949" />
   <component name="JsfProjectComponent">
     <option name="faceletsSupport" value="ENABLED" />
@@ -15,6 +22,7 @@
         <option value="$PROJECT_DIR$/work-ear/pom.xml" />
         <option value="$PROJECT_DIR$/work-ejb/pom.xml" />
         <option value="$PROJECT_DIR$/work-war/pom.xml" />
+        <option value="$PROJECT_DIR$/work-warr/pom.xml" />
       </set>
     </option>
   </component>

@@ -9,6 +9,10 @@
         <locale-config>
             <supported-locale>en</supported-locale>
         </locale-config>
-    </application>
-
+        <message-bundle>com.engagepoint.billspan.messages.messages</message-bundle>
+        <resource-bundle>
+            <base-name>com.engagepoint.billspan.messages.messages</base-name>
+            <var>msg</var>
+        </resource-bundle>
+</application>
 </faces-config>
