@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#pages#employer#overview.xhtml"
+  PATH="/pages/employer/overview.xhtml" SHAPE="256,33,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#pages#employer#overview.xhtml:0" NAME="item"
+   PATH="/pages/employer/overview.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="bills::#pages#employer#billsAndPayments.xhtml" NAME="output"
+    PATH="/pages/employer/billsAndPayments.xhtml"
+    TARGET="rules:#pages#employer#billsAndPayments.xhtml" TITLE="bills" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#pages#individual#overview.xhtml"
+  PATH="/pages/individual/overview.xhtml" SHAPE="256,321,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#pages#individual#overview.xhtml:0"
+   NAME="item" PATH="/pages/individual/overview.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="bills::#pages#individual#billsAndPayments.xhtml" NAME="output"
+    PATH="/pages/individual/billsAndPayments.xhtml"
+    TARGET="rules:#pages#individual#billsAndPayments.xhtml"
+    TITLE="bills" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#pages#individual#disputes#*"
+  PATH="/pages/individual/disputes/*" SHAPE="32,449,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#pages#individual#disputes#*:0" NAME="item"
+   PATH="/pages/individual/disputes/*" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="bills::#pages#individual#billsAndPayments.xhtml" NAME="output"
+    PATH="/pages/individual/billsAndPayments.xhtml"
+    TARGET="rules:#pages#individual#billsAndPayments.xhtml"
+    TITLE="bills" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="disputeHistory::#pages#individual#disputes#history#disputesHistory.xhtml"
+    NAME="output1"
+    PATH="/pages/individual/disputes/history/disputesHistory.xhtml"
+    TARGET="rules:#pages#individual#disputes#history#disputesHistory.xhtml"
+    TITLE="disputeHistory" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#pages#employer#disputes#*"
+  PATH="/pages/employer/disputes/*" SHAPE="32,161,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#pages#employer#disputes#*:0" NAME="item"
+   PATH="/pages/employer/disputes/*" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="bills::#pages#employer#billsAndPayments.xhtml" NAME="output"
+    PATH="/pages/employer/billsAndPayments.xhtml"
+    TARGET="rules:#pages#employer#billsAndPayments.xhtml" TITLE="bills" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="disputeHistory::#pages#employer#disputes#history#disputesHistory.xhtml"
+    NAME="output1"
+    PATH="/pages/employer/disputes/history/disputesHistory.xhtml"
+    TARGET="rules:#pages#employer#disputes#history#disputesHistory.xhtml"
+    TITLE="disputeHistory" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#pages#individual#billsAndPayments.xhtml"
+  PATH="/pages/individual/billsAndPayments.xhtml" SHAPE="480,305,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#pages#individual#billsAndPayments.xhtml:0"
+   NAME="item" PATH="/pages/individual/billsAndPayments.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="entire::#pages#individual#payment#index.xhtml" NAME="output"
+    PATH="/pages/individual/payment/index.xhtml"
+    TARGET="rules:#pages#individual#payment#index.xhtml" TITLE="entire" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="disputeEntire::#pages#individual#disputes#index.xhtml"
+    NAME="output1" PATH="/pages/individual/disputes/index.xhtml"
+    TARGET="rules:#pages#individual#disputes#index.xhtml"
+    TITLE="disputeEntire" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#pages#employer#billsAndPayments.xhtml"
+  PATH="/pages/employer/billsAndPayments.xhtml" SHAPE="480,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#pages#employer#billsAndPayments.xhtml:0"
+   NAME="item" PATH="/pages/employer/billsAndPayments.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="entire::#pages#employer#payment#index.xhtml"
+    NAME="output" PATH="/pages/employer/payment/index.xhtml"
+    TARGET="rules:#pages#employer#payment#index.xhtml" TITLE="entire" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="disputeEntire::#pages#employer#disputes#index.xhtml"
+    NAME="output1" PATH="/pages/employer/disputes/index.xhtml"
+    TARGET="rules:#pages#employer#disputes#index.xhtml"
+    TITLE="disputeEntire" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#pages#employer#*" PATH="/pages/employer/*"
+  SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#pages#employer#*:0" NAME="item"
+   PATH="/pages/employer/*" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="overview::#pages#employer#overview.xhtml"
+    NAME="output" PATH="/pages/employer/overview.xhtml"
+    TARGET="rules:#pages#employer#overview.xhtml" TITLE="overview" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#pages#individual#*"
+  PATH="/pages/individual/*" SHAPE="32,305,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#pages#individual#*:0" NAME="item"
+   PATH="/pages/individual/*" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="overview::#pages#individual#overview.xhtml"
+    NAME="output" PATH="/pages/individual/overview.xhtml"
+    TARGET="rules:#pages#individual#overview.xhtml" TITLE="overview" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#pages#admin#disbursement#*"
+  PATH="/pages/admin/disbursement/*" SHAPE="32,593,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#pages#admin#disbursement#*:0" NAME="item"
+   PATH="/pages/admin/disbursement/*" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="schedule::#pages#admin#disbursement#schedule.xhtml"
+    NAME="output" PATH="/pages/admin/disbursement/schedule.xhtml"
+    TARGET="rules:#pages#admin#disbursement#schedule.xhtml"
+    TITLE="schedule" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#pages#admin#disbursement#schedule.xhtml"
+  PATH="/pages/admin/disbursement/schedule.xhtml" SHAPE="240,609,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#pages#admin#disbursement#schedule.xhtml:0"
+   NAME="item" PATH="/pages/admin/disbursement/schedule.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="setup::#pages#admin#disbursement#setupWizard#index.xhtml"
+    NAME="output"
+    PATH="/pages/admin/disbursement/setupWizard/index.xhtml"
+    TARGET="rules:#pages#admin#disbursement#setupWizard#index.xhtml"
+    TITLE="setup" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#pages#admin#disbursement#*:1"
+  PATH="/pages/admin/disbursement/*" SHAPE="32,705,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#pages#admin#disbursement#*:1" NAME="item"
+   PATH="/pages/admin/disbursement/*" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="add::#pages#admin#disbursement#addWizard#index.xhtml"
+    NAME="output" PATH="/pages/admin/disbursement/addWizard/index.xhtml"
+    TARGET="rules:#pages#admin#disbursement#addWizard#index.xhtml"
+    TITLE="add" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#pages#admin#account#accountDetails.xhtml"
+  PATH="/pages/admin/account/accountDetails.xhtml" SHAPE="544,817,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#pages#admin#account#accountDetails.xhtml:0"
+   NAME="item" PATH="/pages/admin/account/accountDetails.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="createRefund::#pages#admin#refund#setupWizard#index.xhtml"
+    NAME="output" PATH="/pages/admin/refund/setupWizard/index.xhtml"
+    TARGET="rules:#pages#admin#refund#setupWizard#index.xhtml"
+    TITLE="createRefund" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="createReverse::#pages#admin#reverse#setupWizard#index.xhtml"
+    NAME="output1" PATH="/pages/admin/reverse/setupWizard/index.xhtml"
+    TARGET="rules:#pages#admin#reverse#setupWizard#index.xhtml"
+    TITLE="createReverse" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="createDispute::#pages#admin#dispute#addWizard#index.xhtml"
+    NAME="output2" PATH="/pages/admin/dispute/addWizard/index.xhtml"
+    TARGET="rules:#pages#admin#dispute#addWizard#index.xhtml"
+    TITLE="createDispute" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="makeAdjustment::#pages#admin#adjustment#makeAdjustment.xhtml"
+    NAME="output3" PATH="/pages/admin/adjustment/makeAdjustment.xhtml"
+    TARGET="rules:#pages#admin#adjustment#makeAdjustment.xhtml"
+    TITLE="makeAdjustment" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#pages#admin#*" PATH="/pages/admin/*"
+  SHAPE="32,1025,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#pages#admin#*:0" NAME="item"
+   PATH="/pages/admin/*" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="refundDashboard::#pages#admin#refund#refundsDashboard.xhtml"
+    NAME="output" PATH="/pages/admin/refund/refundsDashboard.xhtml"
+    TARGET="rules:#pages#admin#refund#refundsDashboard.xhtml"
+    TITLE="refundDashboard" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="accountDashboard::#pages#admin#account#accountDashboard.xhtml"
+    NAME="output1" PATH="/pages/admin/account/accountDashboard.xhtml"
+    TARGET="rules:#pages#admin#account#accountDashboard.xhtml"
+    TITLE="accountDashboard" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="disputeDashboard::#pages#admin#dispute#disputeDashboard.xhtml"
+    NAME="output3" PATH="/pages/admin/dispute/disputeDashboard.xhtml"
+    TARGET="rules:#pages#admin#dispute#disputeDashboard.xhtml"
+    TITLE="disputeDashboard" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="accountDetails::#pages#admin#account#accountDetails.xhtml"
+    NAME="output4" PATH="/pages/admin/account/accountDetails.xhtml"
+    TARGET="rules:#pages#admin#account#accountDetails.xhtml"
+    TITLE="accountDetails" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="overview::#pages#admin#account#overview.xhtml" NAME="output5"
+    PATH="/pages/admin/account/overview.xhtml"
+    TARGET="rules:#pages#admin#account#overview.xhtml" TITLE="overview" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="adjustmentDashboard::#pages#admin#adjustment#adjustmentDashboard.xhtml"
+    NAME="output2"
+    PATH="/pages/admin/adjustment/adjustmentDashboard.xhtml"
+    TARGET="rules:#pages#admin#adjustment#adjustmentDashboard.xhtml"
+    TITLE="adjustmentDashboard" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="handleCarrier::#pages#admin#carrier#handleCarrier.xhtml"
+    NAME="output7" PATH="/pages/admin/carrier/handleCarrier.xhtml"
+    TARGET="rules:#pages#admin#carrier#handleCarrier.xhtml"
+    TITLE="handleCarrier" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="carriers::#pages#admin#carrier#carriers.xhtml" NAME="output8"
+    PATH="/pages/admin/carrier/carriers.xhtml"
+    TARGET="rules:#pages#admin#carrier#carriers.xhtml" TITLE="carriers" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#pages#assister#*" PATH="/pages/assister/*"
+  SHAPE="32,2177,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#pages#assister#*:0" NAME="item"
+   PATH="/pages/assister/*" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="accountDashboard::#pages#assister#accountDashboard.xhtml"
+    NAME="output" PATH="/pages/assister/accountDashboard.xhtml"
+    TARGET="rules:#pages#assister#accountDashboard.xhtml"
+    TITLE="accountDashboard" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="accountDetails::#pages#assister#accountDetails.xhtml"
+    NAME="output1" PATH="/pages/assister/accountDetails.xhtml"
+    TARGET="rules:#pages#assister#accountDetails.xhtml"
+    TITLE="accountDetails" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#pages#admin#adjustment#makeAdjustment.xhtml"
+  PATH="/pages/admin/adjustment/makeAdjustment.xhtml" SHAPE="32,817,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM
+   ID="rules:#pages#admin#adjustment#makeAdjustment.xhtml:0" NAME="item"
+   PATH="/pages/admin/adjustment/makeAdjustment.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="addAdjustment::#pages#admin#adjustment#adjustmentConfirmation.xhtml"
+    NAME="output"
+    PATH="/pages/admin/adjustment/adjustmentConfirmation.xhtml"
+    TARGET="rules:#pages#admin#adjustment#adjustmentConfirmation.xhtml"
+    TITLE="addAdjustment" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="accountDetails::#pages#admin#account#accountDetails.xhtml"
+    NAME="output1" PATH="/pages/admin/account/accountDetails.xhtml"
+    TARGET="rules:#pages#admin#account#accountDetails.xhtml"
+    TITLE="accountDetails" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM
+  NAME="rules:#pages#admin#adjustment#adjustmentConfirmation.xhtml"
+  PATH="/pages/admin/adjustment/adjustmentConfirmation.xhtml"
+  SHAPE="304,833,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM
+   ID="rules:#pages#admin#adjustment#adjustmentConfirmation.xhtml:0"
+   NAME="item"
+   PATH="/pages/admin/adjustment/adjustmentConfirmation.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="accountDetails::#pages#admin#account#accountDetails.xhtml"
+    NAME="output" PATH="/pages/admin/account/accountDetails.xhtml"
+    TARGET="rules:#pages#admin#account#accountDetails.xhtml"
+    TITLE="accountDetails" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM
+  NAME="rules:#pages#employer#disputes#history#disputesHistory.xhtml"
+  PATH="/pages/employer/disputes/history/disputesHistory.xhtml"
+  SHAPE="256,177,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM
+  NAME="rules:#pages#individual#disputes#history#disputesHistory.xhtml"
+  PATH="/pages/individual/disputes/history/disputesHistory.xhtml"
+  SHAPE="256,465,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM
+  NAME="rules:#pages#admin#disbursement#setupWizard#index.xhtml"
+  PATH="/pages/admin/disbursement/setupWizard/index.xhtml"
+  SHAPE="448,593,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#pages#admin#reverse#setupWizard#index.xhtml"
+  PATH="/pages/admin/reverse/setupWizard/index.xhtml"
+  SHAPE="800,1041,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#pages#admin#account#accountDashboard.xhtml"
+  PATH="/pages/admin/account/accountDashboard.xhtml"
+  SHAPE="304,1409,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#pages#assister#accountDetails.xhtml"
+  PATH="/pages/assister/accountDetails.xhtml" SHAPE="256,2337,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#pages#employer#disputes#index.xhtml"
+  PATH="/pages/employer/disputes/index.xhtml" SHAPE="704,177,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#pages#employer#payment#index.xhtml"
+  PATH="/pages/employer/payment/index.xhtml" SHAPE="704,33,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#pages#admin#refund#setupWizard#index.xhtml"
+  PATH="/pages/admin/refund/setupWizard/index.xhtml" SHAPE="800,833,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM
+  NAME="rules:#pages#admin#disbursement#addWizard#index.xhtml"
+  PATH="/pages/admin/disbursement/addWizard/index.xhtml"
+  SHAPE="240,721,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#pages#individual#disputes#index.xhtml"
+  PATH="/pages/individual/disputes/index.xhtml" SHAPE="704,465,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#pages#admin#carrier#carriers.xhtml"
+  PATH="/pages/admin/carrier/carriers.xhtml" SHAPE="304,2081,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#pages#admin#account#overview.xhtml"
+  PATH="/pages/admin/account/overview.xhtml" SHAPE="304,1745,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#pages#admin#carrier#handleCarrier.xhtml"
+  PATH="/pages/admin/carrier/handleCarrier.xhtml" SHAPE="304,1969,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#pages#admin#dispute#disputeDashboard.xhtml"
+  PATH="/pages/admin/dispute/disputeDashboard.xhtml"
+  SHAPE="304,1633,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#pages#admin#dispute#addWizard#index.xhtml"
+  PATH="/pages/admin/dispute/addWizard/index.xhtml" SHAPE="800,1409,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#pages#admin#refund#refundsDashboard.xhtml"
+  PATH="/pages/admin/refund/refundsDashboard.xhtml" SHAPE="304,1041,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#pages#assister#accountDashboard.xhtml"
+  PATH="/pages/assister/accountDashboard.xhtml" SHAPE="256,2193,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#pages#individual#payment#index.xhtml"
+  PATH="/pages/individual/payment/index.xhtml" SHAPE="704,321,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM
+  NAME="rules:#pages#admin#adjustment#adjustmentDashboard.xhtml"
+  PATH="/pages/admin/adjustment/adjustmentDashboard.xhtml"
+  SHAPE="304,1601,0,0" model-entity="JSFProcessGroup"/>
+</PROCESS>

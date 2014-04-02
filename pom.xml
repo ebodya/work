@@ -180,7 +180,7 @@
     <modules>
         <module>work-ejb</module>
         <module>work-ear</module>
-        <module>work-web</module>
+        <module>work-war</module>
     </modules>
 
 </project>

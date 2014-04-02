@@ -1,4 +1,4 @@
-package com.engagepoint.work.beans;
+package com.engagepoint.beans;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
@@ -9,7 +9,7 @@ import java.io.Serializable;
  * Date: 3/31/14
  * Time: 12:01 PM
  */
-@ManagedBean(name="basicBean")
+@ManagedBean(name="basicBean1")
 @SessionScoped
 public class BasicBean implements Serializable {
     private static String DEFAULT_NAME = "Work";

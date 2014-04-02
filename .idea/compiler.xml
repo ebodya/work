@@ -22,19 +22,21 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="work-ear" />
-        <module name="work-ejb" />
+        <module name="billspan-war" />
         <module name="work-warr" />
         <module name="work-web" />
+        <module name="work-web-temp" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="billspan-war" target="1.6" />
       <module name="work" target="1.6" />
       <module name="work-ear" target="1.6" />
       <module name="work-ejb" target="1.6" />
       <module name="work-war" target="1.6" />
       <module name="work-warr" target="1.6" />
       <module name="work-web" target="1.6" />
+      <module name="work-web-temp" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>
